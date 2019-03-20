@@ -25,7 +25,7 @@ set :keep_releases, 5
 
 # rubyのバージョン
 # rbenvで設定したサーバー側のrubyのバージョン
-set :rbenv_ruby, '2.6.2'
+set :rbenv_ruby, '2.3.7'
 
 # 出力するログのレベル。
 set :log_level, :debug
@@ -50,7 +50,7 @@ namespace :deploy do
                   sql = "CREATE DATABASE IF NOT EXISTS myapp_production;"
                   # クエリの実行。
                 # userとpasswordはmysqlの設定に合わせて
-                execute "mysql --user=root --password=root -e '#{sql}'"
+                execute "mysql --user=root --password=Jk25!!3475 -e '#{sql}'"
 
         end
       end

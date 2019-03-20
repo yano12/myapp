@@ -26,7 +26,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -57,7 +58,7 @@ group :development do
 end
 
 group :production, :staging do
- # gem 'mysql2'
+ gem 'mysql2'
  gem 'unicorn'
 end
 
